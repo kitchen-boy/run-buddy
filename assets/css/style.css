@@ -21,6 +21,10 @@
     border-color: #39a6b2;
 }
 
+.tertiary-border {
+    border-color: red;
+}
+
 .text-left {
     text-align: left;
 }
@@ -238,5 +242,13 @@ section {
 /* "Meet The Trainers" Finish */
 
 /* "Reach Out" Start */
+.contact {
+    text-align: center;
+    background: #024e76;
+}
+
+.contact h2 {
+    color: #fce138;
+}
 /* "Reach Out" Finish */
 
