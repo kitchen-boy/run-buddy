@@ -13,5 +13,5 @@ https://kitchen-boy.github.io/run-buddy/
 ## Contribution
 Made with ❤️ by Kaye Chen-Boyce
 
-### &c 2019 Run Buddy, Inc
+### © 2019 Run Buddy, Inc
 
