@@ -192,9 +192,38 @@ section {
     background: #fce138;
 }
 
+.step {
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 80%; 
+    border-bottom: 1 px solid #39a6b2;
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: space-between;
+}
+
 .step h3 {
     color: #024e76;
     font-size: 46px;
+    flex: 1 30%;
+}
+
+.step-info {
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.step-img {
+    flex: 1 12%;
+    margin-right: 20px;
+    max-width: 100%;
+}
+
+.step-text {
+    flex: 12;
 }
 
 .step-text h4 {
