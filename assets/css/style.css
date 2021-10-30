@@ -58,6 +58,15 @@ header {
     standardized (finalized) version of a property */
     position: sticky;
     top: 0px;
+    /* Style header to look like part of hero section */
+    background-image: url("../images/hero-bg.jpeg");
+    background-size: cover;
+    background-position: center;
+    /* Line up background images of header & hero to be in same place */
+    /* "fixed" = places image relative to viewport instead of element */
+    background-attachment: fixed;
+    /* set background position to better match the mock-up */
+    background-position: 80%;
 }
 
 header h1 {
@@ -133,6 +142,12 @@ section {
     flex-wrap: wrap;
     /* css adjustment for media queries */
     align-items: flex-start;
+    /* Line up background images of header & hero to be in same place */
+    /* "fixed" = places image relative to viewport instead of element */
+    background-attachment: fixed;
+    /* set background position to better match the mock-up */
+    background-position: 80%;
+
 }
 
 .hero-cta {
@@ -386,6 +401,9 @@ section {
     header {
         padding-bottom: 0;
         justify-content: center;
+        /* to undo stickiness for smaller screen sizes */
+        /* sticky header covers up too much space */
+        position: relative;
     }
     header h1 {
         width: 100%;
