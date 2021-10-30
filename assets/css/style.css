@@ -104,6 +104,14 @@ header nav ul li a {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+/* Add hover effects to nav header */
+header nav ul li a:hover {
+    background: #fce138;
+    color: #024e76;
+    border-radius: 15px;
+    text-shadow: none;
+}
+
 footer {
     background: #fce138;
     width: 100%;
@@ -215,6 +223,10 @@ section {
     font-size: 16px;
     /* add small rounded corner to hero button */
     border-radius: 10px;
+}
+/* Add hover effect to Hero button */
+.hero-form button:hover {
+    background-color: #39a6b2;
 }
 /* Hero Style End */
 
@@ -390,6 +402,12 @@ section {
     font-size: 16px;
     /* add rounded corners to contact-form button*/
     border-radius: 10px; 
+}
+
+/* Add hover effect to Contact form button */
+.contact-form button:hover {
+    color:#fce138;
+    background: #39a6b2;
 }
 /* "Reach Out" Finish */
 
