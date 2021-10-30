@@ -148,6 +148,7 @@ section {
 
 .hero-form {
     border: 3px solid #024e76;
+    /* Added transparency to background color */
     background-color: rgba(252, 225, 56, 0.8);
     padding: 20px;
     color: #024e76;
@@ -155,6 +156,8 @@ section {
     margin: 3.5%;
     /* Applies box-shadow to hero form */
     box-shadow: 0 0 10px rgba(0 0 0 0.5);
+    /* Applies rounded corners to hero form */
+    border-radius: 15px;
 }
    
 .hero-form h3 {
@@ -174,6 +177,8 @@ section {
     color: #024e76;
     width: 100%;
     margin-bottom: 15px;
+    /* Add rounded corners to input boxes */
+    border-radius: 10px;
 }
 
 .hero-form label {
@@ -186,6 +191,8 @@ section {
     border: none;
     padding: 10px 20px;
     font-size: 16px;
+    /* add small rounded corner to hero button */
+    border-radius: 10px;
 }
 /* Hero Style End */
 
@@ -347,6 +354,8 @@ section {
      width: 100%;
      margin-bottom: 15px;
      margin-top: 5px;
+     /* add rounded corners to contact form input boxes */
+     border-radius: 10px;
 } 
 
 .contact-form button {
@@ -357,6 +366,8 @@ section {
     text-align: center;
     padding: 15px 0;
     font-size: 16px;
+    /* add rounded corners to contact-form button*/
+    border-radius: 10px; 
 }
 /* "Reach Out" Finish */
 
