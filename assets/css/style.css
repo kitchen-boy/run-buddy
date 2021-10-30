@@ -52,6 +52,10 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     /* Make <header> sticky */
+    /* Add vendor prefix to sticky header for Safari */
+    position: -webkit-sticky;
+    /* Always put vendor-prefixed versions before 
+    standardized (finalized) version of a property */
     position: sticky;
     top: 0px;
 }
