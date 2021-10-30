@@ -299,7 +299,8 @@ section {
     justify-content:space-between;
     flex-wrap: wrap;
 }
-
+ /* "*" selector = select all elements that are direct children of anything with class <contact-info> */
+    /* ">" symbol = look specifically for direct children of the element listed first */
 .contact-info > * {
     flex: 1;
     margin: 15px;
@@ -426,6 +427,39 @@ section {
 /* BEST PRACTICE to take mobile-first approach
  when STARTING NEW SITE FROM SCRATCH,
 use min-width values instead of max-width ones */
-@media  and (max-width: 575px) {
-    
-}
+@media screen and (max-width: 575px) {
+    /* to make hero-form button full width*/
+    .hero-form button {
+        width: 100%;
+    }
+
+    /* to take up 95% of window width */
+    .section-title {
+        width: 95%;
+    }
+    .intro p {
+        width: 100%;
+    }
+    /* to give trainer cards more horizontal space */
+    .trainer {
+        flex: 0 100%;
+    }
+    /* to allow all 3 flex children to be full-width */
+    .contact-info {
+        text-align: center;
+    }
+    /* "*" selector = select all elements 
+    that are direct children of anything with class <contact-info> */
+    /* ">" symbol = look specifically for direct children 
+    of the element listed first */
+    .contact-info > * {
+        flex: 0 100%;
+    }
+    /* to change order of divisions in REACH-OUT section */
+    /* <contact-form> will be moved to to 3rd place */
+    /* order property can rearrange how child elements appear on a page
+    without moving the HTML */
+    .contact-form {
+        order: 3;
+    }
+} 
