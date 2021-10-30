@@ -395,7 +395,31 @@ section {
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
-    
+    /* To give each <section> element more space */
+    section {
+        padding: 30px 15px;
+    }
+    /* WHAT-YOU-DO <section>
+    - to allow each flex child to occupy full width of page */
+    .step h3 {
+        flex: 1 100%;
+        text-align: center;
+    }
+    .step-info {
+        flex: 2 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    /* Capped icon at 32% & not take up any extra unused space by making flex-grow=0 */
+    .step-img {
+        flex: 0 32%;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .step-text {
+        flex: 100%;
+    }
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
