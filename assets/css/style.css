@@ -238,6 +238,41 @@ section {
 .hero-form button:hover {
     background-color: #39a6b2;
 }
+/* Customize Checkboxes & Radio Buttons */
+/* Pseudo-Elements to make inputs inside wrappers disapear */
+/* opacity property defines transparency from 0.0-1.0; 0=invisible */
+.checkbox-wrapper input, .radio-wrapper input {
+    opacity: 0;
+}
+/* Prep <label> elements so that new buttons can fit inside */
+.checkbox-wrapper label, .radio-wrapper label {
+    position: relative;
+    left: 10px; 
+    margin: 10px;
+    line-height: 1.6;
+}
+/* Add new buttons using CSS & pseudo-elements */
+/* ::before pseudo-element allows us to inject content into label element 
+before everything else that currently resides in label element */
+.checkbox-wrapper label::before, .radio-wrapper label::before {
+    /* content property is left empty */
+    content: "";
+    /* create white square with blue border */
+    height: 20px;
+    width: 20px;
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid #024e76;
+    /* absolute positioning to move box 
+    on top of invisible, original input element */
+    position: absolute;
+    top: -4px;
+    left: -30px;
+}
+/* Make new radio buttons round */
+.radio-wrapper label::before {
+    border-radius: 50%;
+}
+
 /* Hero Style End */
 
 /* "What We Do" Start */
