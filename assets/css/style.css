@@ -67,6 +67,8 @@ header {
     background-attachment: fixed;
     /* set background position to better match the mock-up */
     background-position: 80%;
+    /* To keep <header> element on top in stacking order */
+    z-index: 9999;
 }
 
 header h1 {
