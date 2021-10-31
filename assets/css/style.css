@@ -272,7 +272,43 @@ before everything else that currently resides in label element */
 .radio-wrapper label::before {
     border-radius: 50%;
 }
-
+/* use <::after> pseudo-element 
+to define how buttons display when checked or clicked */
+.radio-wrapper label::after {
+    content: "";
+    /* created a colored circle for the radio buttons */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    left: -29px;
+    top: -3px;
+    /* replace solid background colour with a gradient */
+    background-image: radial-gradient(circle, #39a6b2, #024e76);
+}
+.checkbox-wrapper label::after {
+    content: "";
+    /* created weird L-shaped thingy for checkbox
+    i.e. a rectangle that only has 2 borders = looks like an L */ 
+    height: 6px;
+    width: 14px;
+    border-left: 2px solid #024e76;
+    border-bottom: 2px solid #024e76;
+    position: absolute;
+    left: -26px;
+    top: 1px;
+    /* to rotate L-shaped thingy to make it look more like a checkmark */
+    transform: rotate(-58deg);
+}
+/* When <label> element is clicked = checkbox-wrapper, radio-wrapper 
+it checks the input that's tied to it */
+.checkbox-wrapper input + label::after, .radio-wrapper input + label::after {
+    content: none;
+}
+/* <""> = empty text & all of the other styles defined earlier will take effect */
+.checkbox-wrapper input:checked +label::after, .radio-wrapper input:checked + label::after {
+    content: "";
+}
 /* Hero Style End */
 
 /* "What We Do" Start */
