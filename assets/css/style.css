@@ -10,6 +10,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* Global Stylings Start*/
 .section-title {
     /* to create font size big enough for ALL screens */
@@ -243,16 +244,19 @@ section {
     /* add small rounded corner to hero button */
     border-radius: 10px;
 }
+
 /* Add hover effect to Hero button */
 .hero-form button:hover {
     background-color: var(--tertiary-color);
 }
+
 /* Customize Checkboxes & Radio Buttons */
 /* Pseudo-Elements to make inputs inside wrappers disapear */
 /* opacity property defines transparency from 0.0-1.0; 0=invisible */
 .checkbox-wrapper input, .radio-wrapper input {
     opacity: 0;
 }
+
 /* Prep <label> elements so that new buttons can fit inside */
 .checkbox-wrapper label, .radio-wrapper label {
     position: relative;
@@ -260,6 +264,7 @@ section {
     margin: 10px;
     line-height: 1.6;
 }
+
 /* Add new buttons using CSS & pseudo-elements */
 /* ::before pseudo-element allows us to inject content into label element 
 before everything else that currently resides in label element */
@@ -277,10 +282,12 @@ before everything else that currently resides in label element */
     top: -4px;
     left: -30px;
 }
+
 /* Make new radio buttons round */
 .radio-wrapper label::before {
     border-radius: 50%;
 }
+
 /* use <::after> pseudo-element 
 to define how buttons display when checked or clicked */
 .radio-wrapper label::after {
@@ -309,11 +316,13 @@ to define how buttons display when checked or clicked */
     /* to rotate L-shaped thingy to make it look more like a checkmark */
     transform: rotate(-58deg);
 }
+
 /* When <label> element is clicked = checkbox-wrapper, radio-wrapper 
 it checks the input that's tied to it */
 .checkbox-wrapper input + label::after, .radio-wrapper input + label::after {
     content: none;
 }
+
 /* <""> = empty text & all of the other styles defined earlier will take effect */
 .checkbox-wrapper input:checked +label::after, .radio-wrapper input:checked + label::after {
     content: "";
@@ -385,11 +394,9 @@ it checks the input that's tied to it */
     color: var(--tertiary-color);
     font-size: 18px;
 }
-
 /* "What You Do" Finish */
 
 /* "Meet The Trainers" Start */
-
 .trainers {
     width: 100%;
     margin: 0 auto;
@@ -443,6 +450,7 @@ it checks the input that's tied to it */
     justify-content:space-between;
     flex-wrap: wrap;
 }
+
  /* "*" selector = select all elements that are direct children of anything with class <contact-info> */
     /* ">" symbol = look specifically for direct children of the element listed first */
 .contact-info > * {
